@@ -10,7 +10,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='This will reset all points on your board with (0) on selected lists. Please be careful.')
     parser.add_argument('board_id', type=str, help='board id')
     parser.add_argument('-l', dest='list', nargs='+', help='Lists to use')
-    parser.add_argument('--4-real', dest='dry_run', action='store_false', help='Dry run')
+    parser.add_argument('--4-real', dest='dry_run', action='store_false', help='If this argument is set, then changes are permanent.')
 
     args = parser.parse_args()
 
